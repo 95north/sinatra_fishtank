@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>~* Your Fishtank *~</title>
+</head>
+<body>
+
+	<h3> Here are your fishes: </h3>
+
+		<ul>
+		<% @fishes.each do |f|  %>
+			<li>
+			<%= f.name %> ~ <%= f.species %> ~ <%= f.color %>
+			</li>
+		<% end %>
+		</ul>
+
+
+</body>
+</html>
